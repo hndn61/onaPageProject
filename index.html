@@ -1,0 +1,819 @@
+<!-- comment line(yorum satırı) -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- meta -->
+    <!-- Türkçe karakter -->
+    <meta charset="utf-8" />
+    <!-- Görüş alanı -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Başlık -->
+    <title>Kişisel Blog</title>
+    <!-- Site içerik tanımlama -->
+    <meta
+      name="description"
+      content="html5, css3, js, jquery, bootstrap, es, react"
+    />
+    <meta name="author" content="Handan Günaydın" />
+
+    <!-- Google font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata&family=PT+Serif&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="//use.fontawesome.com/releases/v5.0.7/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- Jquery ui and js    -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <!-- jquery validate -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+
+    <!-- external style css -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- external responsive css -->
+    <link href="css/responsive.css" rel="stylesheet" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/ts_amblem2.png" />
+
+    <!-- react development -->
+    <script
+      crossorigin
+      src="https://unpkg.com/react@17/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+    ></script>
+  </head>
+
+  <body>
+    <!-- start codes -->
+    <!-- start section navbar -->
+    <nav id="main-nav">
+      <div class="row">
+        <div class="container">
+          <!-- Sayfa logosu -->
+          <div class="logo">
+            <a href="index.html"><img src="images/ts_logo.png" alt="logo" /></a>
+          </div>
+          <!-- Responsive Design -->
+          <div class="responsive">
+            <i
+              data-icon="m"
+              class="fas fa-arrow-circle-down"
+              style="color: black"
+            ></i>
+          </div>
+
+          <ul class="nav-menu list-unstyled">
+            <li>
+              <a href="#anasayfa"> Anasayfa </a>
+            </li>
+            <li><a href="#hakkinda"> Hakkında </a></li>
+            <li><a href="#blog"> Blog </a></li>
+            <li class="nav-item">
+              <a data-bs-toggle="modal" data-bs-target="#sepet" href="#">
+                <i class="fa fa-shopping-basket mr-3" style="color: black"></i>
+                Sepet
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                id="timerId"
+                data-bs-toggle="modal"
+                data-bs-target="#timer"
+                href="#"
+              >
+                <i class="fas fa-clock mr-3" style="color: black"></i>
+                Timer
+              </a>
+            </li>
+            <li class="nav-item">
+              <a data-bs-toggle="modal" data-bs-target="#todolist" href="#">
+                <i class="fa fa-th-list mr-5" style="color: black"></i> Todo
+                List
+              </a>
+            </li>
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="dropdownId"
+                data-bs-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <i class="fa fa-user" style="color: black"></i> Üye
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownId">
+                <!-- üye ol -->
+                <a
+                  class="dropdown-item"
+                  data-bs-toggle="modal"
+                  data-bs-target="#register"
+                  href="#"
+                  >Üye Ol</a
+                >
+                <!-- üye giriş -->
+                <a
+                  class="dropdown-item"
+                  data-bs-toggle="modal"
+                  data-bs-target="#register2"
+                  href="#"
+                  >Üye Girişi</a
+                >
+              </div>
+            </li>
+            <li>
+              <a href="#iletisim"
+                ><i class="fas fa-envelope-open" style="color: black"></i>
+                İletişim
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- ends section navbar -->
+
+    <!-- start section anasayfa -->
+    <div id="anasayfa" class="home">
+      <div class="container">
+        <div class="header-content">
+          <h1>I'm <span class="typed"></span></h1>
+          <p>computer engineer, frontend developer...</p>
+          <ul class="list-unstyled list-social">
+            <li>
+              <a href="https://www.facebook.com/profile.php?id=100005304606798"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/handannngnydn"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/handangnn"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/handan-g%C3%BCnaydin-05a348182/"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- ends section anasayfa -->
+
+    <!-- start section hakkında -->
+    <div id="hakkinda" class="paddsection">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-lg-4">
+            <div class="div-img-bg">
+              <div class="about-img">
+                <img src="images/my1.jpg" class="img-responsive" alt="me" />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="about-descr">
+              <p class="p-heading">
+                Merhaba ben Handan, ilk blok sayfama hoşgeldiniz...<i
+                  class="fas fa-smile"
+                  style="font-size: 24px"
+                ></i>
+              </p>
+              <p class="separator">
+                Karadeniz Teknik Üniversitesi, Mühendislik Fakültesi,
+                Bilgisayara Mühendisliği bölümünden 2020 yılında mezun oldum.
+                Araştırmayı, öğrenmeyi seven, yenilikçi bir kişiliğe sahip
+                olduğumu düşünüyorum. İlk blok sayfamda biraz hobilerime yer
+                vermek istiyorum. Sayfamın simgesindende anlaşılacağı üzere
+                Trabzon ve Trabzonspor aşığı biriyim. Blog sayfamda bununla
+                alakalı bolca paylaşım yapacağım. Umarım sizin için keyifli bir
+                blog sayfası olur...<i
+                  class="fas fa-smile"
+                  style="font-size: 24px"
+                ></i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ends section hakkında -->
+
+    <!-- start section blog -->
+    <div id="blog" class="text-left paddsection">
+      <div class="container">
+        <div class="section-title text-center">
+          <h2>BLOG</h2>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="journal-block">
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <div class="journal-info">
+                <a href="blog-single.html"
+                  ><img
+                    src="images/meydanFoto.JPG"
+                    class="img-responsive"
+                    alt="img"
+                /></a>
+
+                <div class="journal-txt">
+                  <h4>
+                    <a href="blog-single.html">TRABZONSPOR</a>
+                  </h4>
+                  <p class="separator">
+                    Sevdiğim bir alan olan futbol, memleketimin takımı olan
+                    Trabzonspor ile başladı. Bloğumda sizlerle Trabzonspor ile
+                    olan dolu dolu geçen anılarımı ve şehrin Trabzonspor
+                    sevgisini paylaşacağım.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="journal-info">
+                <a href="blog-single2.html"
+                  ><img
+                    src="images/meliksah4.jpg"
+                    class="img-responsive"
+                    alt="img"
+                /></a>
+
+                <div class="journal-txt">
+                  <h4>
+                    <a href="blog-single2.html">TRABZON</a>
+                  </h4>
+                  <p class="separator">
+                    Trabzon şehrinin güzelliklerinden bahsetmek istiyorum.
+                    Trabzon şehri turistik bir şehirdir. Memleketim olan bu
+                    şehirde birçok tarihi yer vardır. Gezip gördüğüm, her anını
+                    fotoğrafla kalıcı kıldığım anılarımı sizlerle de
+                    paylaşacağım.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="journal-info">
+                <a href="blog-single3.html"
+                  ><img
+                    src="images/meslek.jpg"
+                    class="img-responsive"
+                    alt="img"
+                /></a>
+
+                <div class="journal-txt">
+                  <h4>
+                    <a href="blog-single3.html">MESLEKİ ARAŞTIRMALAR</a>
+                  </h4>
+                  <p class="separator">
+                    Bilgisayar mühendisiyim. Bir çok alanda kendimi geliştirmeye
+                    çalışıyorum. Bu süreçte edindiğim bilgileri sizlerle
+                    paylaşacağım.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ends section blog -->
+
+    <!-- start section sepet -->
+    <div
+      class="modal fade paddsection"
+      id="sepet"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modelTitleId"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">SEPET</h5>
+            <button
+              type="button"
+              class="btn-close btn-danger"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="shopp-block">
+                <div class="row">
+                  <div class="col-lg-4 col-md-6">
+                    <div class="shopp-info">
+                      <img
+                        src="images/forma1.png"
+                        class="img-responsive"
+                        alt="img"
+                      />
+
+                      <div class="shopp-txt">
+                        <h4 id="form1">Yeni Sezon Forma-1</h4>
+                        <p id="tl1">Fiyat: 349.99 TL</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-md-6">
+                    <div class="shopp-info">
+                      <img
+                        src="images/forma2.png"
+                        class="img-responsive"
+                        alt="img"
+                      />
+
+                      <div class="shopp-txt">
+                        <h4 id="form2">Yeni Sezon Forma-2</h4>
+                        <p id="tl2">Fiyat: 349.99 TL</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-md-6">
+                    <div class="shopp-info">
+                      <img
+                        src="images/forma3.png"
+                        class="img-responsive"
+                        alt="img"
+                      />
+
+                      <div class="shopp-txt">
+                        <h4 id="form3">Yeni Sezon Forma-3</h4>
+                        <p id="tl3">Fiyat: 349.99 TL</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container">
+                <div class="row">
+                  <!-- Sepet root yapısı-1 -->
+                  <div id="plus_minus"></div>
+                </div>
+              </div>
+              <div class="container">
+                <div class="row">
+                  <!-- Sepet root yapısı-2 -->
+                  <div id="plus_minus2"></div>
+                </div>
+              </div>
+              <div class="container">
+                <div class="row">
+                  <!-- Sepet root yapısı-3 -->
+                  <div id="plus_minus3"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button id="sepett" type="submit" class="btn btn btn-danger">
+              Sepet
+            </button>
+            <button
+              id="kapatt"
+              type="button"
+              class="btn"
+              data-bs-dismiss="modal"
+            >
+              Kapat
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ends section sepet -->
+
+    <!-- start section timer -->
+    <div
+      class="modal fade paddsection"
+      id="timer"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modelTitleId"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="timerId">TİMER</h5>
+            <button
+              type="button"
+              class="btn-close btn-danger"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- Timer root yapısı -->
+            <div id="timer_id"></div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" id="gosterButon">
+              GÖSTER
+            </button>
+            <button type="button" class="btn btn-primary" id="kapatButon">
+              KAPAT
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ends section timer -->
+
+    <!-- start section todoList -->
+    <div
+      class="modal fade paddsection"
+      id="todolist"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modelTitleId"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="listId">Todo List Uygulaması</h5>
+            <button
+              type="button"
+              class="btn-close btn-danger"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="card">
+              <!-- todoList root yapısı -->
+              <div id="todolistId"></div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger">Kaydet</button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
+              Kapat
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ends section todoList -->
+
+    <!-- start modal register -->
+    <!-- üye ol-->
+    <!-- modal-fade: animasyonlu açılıp kapanmasını sağlar. -->
+    <div
+      class="modal fade"
+      id="register"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modelTitleId"
+      aria-hidden="true"
+    >
+      <!-- modal-dialog: dialog penceresi açar. -->
+      <div class="modal-dialog" role="document">
+        <!-- modal-content: içerik oluşturur. -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Üye Ol</h5>
+            <button
+              type="button"
+              class="btn-close btn-danger"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form method="post" action="index.html">
+              <div class="form-control">
+                <label for="name_surname">Ad-Soyad</label>
+                <input
+                  type="text"
+                  id="name_surname"
+                  name="name_surname"
+                  class="form-control"
+                  required
+                  autofocus
+                />
+              </div>
+              <div class="form-control">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <div class="form-control">
+                <label for="password">Şifre</label>
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <div class="form-control">
+                <label for="re_password">Şifre tekrarı</label>
+                <input
+                  type="password"
+                  id="re_password"
+                  name="re_password"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <div class="mt-3">
+                <input
+                  id="temizle"
+                  type="reset"
+                  class="btn btn-danger"
+                  value="temizle"
+                />
+                <input
+                  id="gonder"
+                  type="submit"
+                  class="btn btn-primary"
+                  value="gönder"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              id="kapat"
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Kapat
+            </button>
+            <button id="kaydet" type="button" class="btn btn-primary">
+              Kaydet
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ends modal register-->
+
+    <!-- start modal register -->
+    <!-- üye girişi -->
+    <div
+      class="modal fade"
+      id="register2"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modelTitleId"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Üye Girişi</h5>
+            <button
+              type="button"
+              class="btn-close btn-danger"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form method="post" action="index.html">
+              <div class="form-control">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <div class="form-control">
+                <label for="password">Şifre</label>
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <div class="mt-3">
+                <input
+                  id="temizle"
+                  type="reset"
+                  class="btn btn-danger"
+                  value="temizle"
+                />
+                <input
+                  id="gonder"
+                  type="submit"
+                  class="btn btn-primary"
+                  value="gönder"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              id="kapat"
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Kapat
+            </button>
+            <button id="kaydet" type="button" class="btn btn-primary">
+              Kaydet
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ends modal register -->
+
+    <!-- start section iletişim -->
+    <div id="iletisim" class="paddsection">
+      <div class="container">
+        <div class="contact-block1">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="contact-contact">
+                <h3 class="iletH mb-30">İLETİŞİM BİLGİLERİ</h3>
+
+                <ul class="contact-details">
+                  <li><span>İSTANBUL-BAHÇEŞEHİR</span></li>
+                  <li><span>handangnn@gmail.com</span></li>
+                </ul>
+              </div>
+            </div>
+            <!-- Form Validation -->
+            <div class="col-lg-6">
+              <form
+                id="basic_form"
+                action=""
+                method="post"
+                role="form"
+                class="contactForm"
+              >
+                <div class="row">
+                  <h3 class="mb-30">İLETİŞİM FORMU</h3>
+                  <div class="col-lg-6">
+                    <div class="form-group contact-block1">
+                      <input
+                        id="name"
+                        name="name"
+                        class="form-control"
+                        placeholder="Adınızı giriniz..."
+                      />
+                      <div class="validation"></div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <input
+                        id="email"
+                        name="email"
+                        class="form-control"
+                        placeholder="Emailinizi giriniz..."
+                      />
+                      <div class="validation"></div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-12">
+                    <div class="form-group">
+                      <input
+                        id="konu"
+                        name="konu"
+                        class="form-control"
+                        placeholder="Konuyu giriniz..."
+                      />
+                      <div class="validation"></div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-12">
+                    <div class="form-group">
+                      <textarea
+                        name="mesaj"
+                        id="mesaj"
+                        class="form-control"
+                        rows="12"
+                        placeholder="Mesajınızı giriniz..."
+                      ></textarea>
+                      <div class="validation"></div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-12">
+                    <input
+                      type="submit"
+                      id="iletisimButon"
+                      class="btn btn-defeault btn-send"
+                      value="GÖNDER"
+                    />
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ends section iletişim -->
+
+    <!-- start section footer -->
+    <div id="footer" class="text-center">
+      <div class="container">
+        <div class="socials-media text-center">
+          <ul class="list-unstyled">
+            <li>
+              <a href="https://www.facebook.com/profile.php?id=100005304606798"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/handannngnydn"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/handangnn"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/handan-g%C3%BCnaydin-05a348182/"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <p>Hoşçakalın...</p>
+      </div>
+    </div>
+    <!-- ends section footer -->
+
+    <!-- ends codes -->
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <!-- Bu iki yapı en altta kalmalı -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js "></script>
+
+    <!-- Javascript babel dosyası-->
+    <script src="app.js"></script>
+  </body>
+</html>
